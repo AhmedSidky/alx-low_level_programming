@@ -4,11 +4,17 @@
  * @s:input
  * return:strlen
  */
+
 int _strlen(char *s)
 {
-	int i;
-	for(i = 0,i <(*s),i++)
+	int longi = 0;
+
+	while (*s != '\0')
 	{
-	*s = i;
+		longi++;
+		s++;
 	}
+
+	return (longi);
+
 }
